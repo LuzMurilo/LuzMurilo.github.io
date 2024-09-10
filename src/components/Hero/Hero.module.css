@@ -1,0 +1,108 @@
+@import "../../variables.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    z-index: 1;
+    gap: 32px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    gap: 32px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+}
+
+.description {
+    font-size: 1.25rem;
+    font-family: var(--font-roboto);
+    margin-bottom: 32px;
+    background: var(--gradient-title);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.contactBtn {
+    background-color: var(--color-primary);
+    background: var(--gradient-button);
+    padding: 16px;
+    border-radius: 64px;
+    border: 2px solid var(--color-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+    min-width: 150px;
+    text-align: center;
+    box-shadow: var(--shadow-button);
+}
+
+.heroImg {
+    width: 30vw;
+    z-index: 1;
+
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, -10px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -10px);
+    }
+}
+
+.topBlur {
+    position: absolute;
+    top: -128px;
+    left: -128px;
+    z-index: 0;
+    width: 60vw;
+    height: 60vw;
+    min-width: 256px;
+    min-height: 256px;
+    border-radius: 50%;
+    background-color: var(--color-dark);
+    filter: blur(128px);
+}
+
+.bottomBlur {
+    position: absolute;
+    bottom: -64px;
+    right: -64px;
+    z-index: 0;
+    width: 50vw;
+    height: 50vw;
+    min-width: 256px;
+    min-height: 256px;
+    border-radius: 50%;
+    background-color: var(--color-dark);
+    filter: blur(128px);
+}
+
+@media screen and (max-width: 790px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        align-items: center;
+    }
+}

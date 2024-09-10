@@ -1,0 +1,19 @@
+:root {
+    /* Colors */
+    --color-text: #fff;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+
+    /* Fonts */
+    --font-roboto: "Roboto";
+
+    /* Gradient */
+    --gradient-dark: linear-gradient(150deg, var(--color-dark) 10%, rgba(255, 255, 255, 0) 60%, var(--color-dark) 80%);
+    --gradient-title: linear-gradient(120deg, rgba(0, 0, 0, 0.75) -70%, var(--color-text) 25%, var(--color-text) 75%, rgba(0, 0, 0, 0.75) 120%);
+    --gradient-button: linear-gradient(-30deg, var(--color-dark) 0%, var(--color-secondary) 40% 60%, var(--color-primary) 120%);
+    
+    /* Shadow */
+    --shadow-button: 2px 2px 2px #000;
+}
