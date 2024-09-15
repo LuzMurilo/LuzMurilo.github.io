@@ -5,7 +5,7 @@ function Hero() {
 
 
   return (
-    <section className={styles.heroSection}>
+    <section className={styles.heroSection} id="hero">
       <div className={styles.container}>
         <div className={styles.content}>
             <h1 className={styles.title}>Hi, I'm Murilo</h1>
