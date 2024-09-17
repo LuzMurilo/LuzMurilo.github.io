@@ -8,7 +8,7 @@
     max-width: 100vw;
     overflow: hidden;
     color: var(--color-text);
-    
+    padding-bottom: 64px;
 }
 
 a {
