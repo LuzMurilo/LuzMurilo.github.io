@@ -60,7 +60,7 @@
 }
 
 .cardText {
-    text-align: justify;
+    text-align: left;
     font-size: 1.25rem;
 }
 
@@ -77,5 +77,11 @@
 
     .card {
         background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cardText {
+        font-size: 1rem;
     }
 }

@@ -2,6 +2,7 @@ import styles from "./Experience.module.css";
 import { getImageURL } from "../../utils";
 
 import skills from "../../data/skills.json";
+import experiences from "../../data/experience.json";
 
 
 function Experience() {
@@ -20,19 +21,22 @@ function Experience() {
                         </div>)
                     })}
                 </div>
-                <ul className={styles.cardList}>
-                    <li className={styles.card}>
-                        <img className={styles.cardImg} src={getImageURL("about/cursorIcon.png")} alt="cursor icon" />
-                        <p  className={styles.cardText}> Some text about me, graduated in Computer Engineering and worked as a Game Developer and Web Developer</p>
-                    </li>
-                    <li className={styles.card}>
-                        <img className={styles.cardImg} src={getImageURL("about/serverIcon.png")} alt="cursor icon" />
-                        <p  className={styles.cardText}> Some text about me, graduated in Computer Engineering and worked as a Game Developer and Web Developer</p>
-                    </li>
-                    <li className={styles.card}>
-                        <img className={styles.cardImg} src={getImageURL("about/uiIcon.png")} alt="cursor icon" />
-                        <p  className={styles.cardText}> Some text about me, graduated in Computer Engineering and worked as a Game Developer and Web Developer</p>
-                    </li>
+                <ul className={styles.cardList}>{
+                    experiences.map((experience, id) => {
+                        return (
+                            <div className={styles.card} key={id}>
+                                {experience.imageSrc && <img src={getImageURL(experience.imageSrc)} alt={experience.organisation}></img>}
+                                <div className={styles.cardContent}>
+                                    <div className={styles.cardTitle}>
+                                        <h2>{experience.role}, {experience.organisation}</h2>
+                                        <span className={styles.dates}>{experience.startDate} - {experience.endDate}</span>
+                                    </div>
+                                    <ul className={styles.cardAssignments}>{experience.assignments.map((ass, index) => <li key={"assignment"+index}>{ass}</li>)}</ul>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
                 </ul>
             </div>
         </div>
