@@ -8,3 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+a.active {
+  text-decoration-line: underline;
+}

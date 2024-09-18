@@ -127,12 +127,29 @@
 }
 
 .cardAssignments {
-    list-style: circle;
+    list-style: disc;
     margin-left: 16px;
 }
 
 .dates {
     color: var(--color-text-secondary);
+}
+
+.detailsBtn {
+    background-color: var(--color-primary);
+    background: var(--gradient-button);
+    padding: 16px;
+    border-radius: 64px;
+    border: 2px solid var(--color-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+    min-width: 150px;
+    text-align: center;
+    box-shadow: var(--shadow-button);
+    display: block;
+    width: 128px;
+    margin-top: 16px;
+    margin-left: auto;
 }
 
 @media screen and (max-width: 1200px) {

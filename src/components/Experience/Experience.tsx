@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Experience.module.css";
 import { getImageURL } from "../../utils";
 
@@ -24,7 +25,7 @@ function Experience() {
                 <ul className={styles.cardList}>{
                     experiences.map((experience, id) => {
                         return (
-                            <div className={styles.card} key={id}>
+                            <NavLink to="/experiences" className={styles.card} key={id}>
                                 {experience.imageSrc && <img src={getImageURL(experience.imageSrc)} alt={experience.organisation}></img>}
                                 <div className={styles.cardContent}>
                                     <div className={styles.cardTitle}>
@@ -33,12 +34,13 @@ function Experience() {
                                     </div>
                                     <ul className={styles.cardAssignments}>{experience.assignments.map((ass, index) => <li key={"assignment"+index}>{ass}</li>)}</ul>
                                 </div>
-                            </div>
+                            </NavLink>
                         )
                     })
                 }
                 </ul>
             </div>
+            <NavLink to="/experiences" className={styles.detailsBtn}>+ Details</NavLink>
         </div>
     </section>
   )

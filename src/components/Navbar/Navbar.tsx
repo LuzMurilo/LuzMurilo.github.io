@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { getImageURL } from "../../utils";
 import { useState } from "react";
@@ -20,16 +21,16 @@ const Navbar = () => {
             <ul className={`${styles.navList} ${!menuOpen && styles.hidden}`}
                 onClick={() => setMenuOpen(false)}>
                 <li className={styles.navItem}>
-                    <a href="/#about">About</a>
+                    <NavLink to="/">Home</NavLink>
                 </li>
                 <li className={styles.navItem}>
-                    <a href="/#experience">Experience</a>
+                    <NavLink to="/experiences">Experiences</NavLink>
                 </li>
                 <li className={styles.navItem}>
-                    <a href="/#projects">Projects</a>
+                    <NavLink to="/projects">Projects</NavLink>
                 </li>
                 <li className={styles.navItem}>
-                    <a href="/#Contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
