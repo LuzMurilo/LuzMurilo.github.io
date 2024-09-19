@@ -1,0 +1,42 @@
+@import "../../variables.css";
+
+.projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 32px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1152px;
+    padding: 0;
+    display: flex;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.projectCard {
+    padding: 16px;
+    background: var(--gradient-dark);
+    border: 2px solid var(--color-dark);
+    border-radius: 16px;
+}
+
+.projectCard img {
+    width: 192px;
+    height: 192px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.projectTitle {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Project Aster",
+        "description": "This project is a 2D metroidvania prototype. It's currently in the concept phase and I still need to implement and test new ideas, and flesh out the design. The video above show the most basic functionalities for movement and combat",
+        "videoSrc": "https://www.youtube.com/embed/hcM00nBz1a8",
+        "imageSrc": "projects/aster.png",
+        "reposirory": "https://gitlab.com/luzmurilo/project-aster"
+    },
+    {
+        "title": "Constellation",
+        "description": "A game made for the Lost Relic GameJam 2022. The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made. I developed this game from scratch in a week. All aspects, except the music, were made by me.",
+        "imageSrc": "projects/constellation.png",
+        "reposirory": "https://gitlab.com/luzmurilo/moonshooter",
+        "demo": "https://muriloluz.itch.io/constellation"
+    },
+    {
+        "title": "Test",
+        "description": "A game made for the Lost Relic GameJam 2022. The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made. I developed this game from scratch in a week. All aspects, except the music, were made by me.",
+        "imageSrc": "projects/project.png",
+        "reposirory": "https://gitlab.com/luzmurilo/moonshooter",
+        "demo": "https://muriloluz.itch.io/constellation"
+    },
+    {
+        "title": "Test",
+        "description": "A game made for the Lost Relic GameJam 2022. The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made. I developed this game from scratch in a week. All aspects, except the music, were made by me.",
+        "imageSrc": "projects/project.png",
+        "reposirory": "https://gitlab.com/luzmurilo/moonshooter",
+        "demo": "https://muriloluz.itch.io/constellation"
+    },
+    {
+        "title": "Test",
+        "description": "A game made for the Lost Relic GameJam 2022. The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made. I developed this game from scratch in a week. All aspects, except the music, were made by me.",
+        "imageSrc": "projects/project.png",
+        "reposirory": "https://gitlab.com/luzmurilo/moonshooter",
+        "demo": "https://muriloluz.itch.io/constellation"
+    }
+]
