@@ -12,3 +12,8 @@ html {
 a.active {
   text-decoration-line: underline;
 }
+
+.fixed {
+  position: fixed;
+  padding: 16px 8%;
+}

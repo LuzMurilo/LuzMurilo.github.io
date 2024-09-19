@@ -6,15 +6,18 @@
     --color-secondary: #19376d;
     --color-dark: #0b2447;
     --color-bg: #04152d;
+    --color-bg-alpha: #04152dce;
 
     /* Fonts */
     --font-roboto: "Roboto";
 
     /* Gradient */
     --gradient-dark: linear-gradient(150deg, var(--color-dark) 20%, rgba(255, 255, 255, 0) 60%, var(--color-dark) 100%);
+    --gradient-navbar: linear-gradient(150deg, var(--color-secondary) 10%,var(--color-bg-alpha) 40%, var(--color-secondary) 80%);
     --gradient-primary: linear-gradient(150deg, var(--color-primary) 0%, var(--color-dark) 60%, var(--color-primary) 120%);
     --gradient-secondary: linear-gradient(150deg, var(--color-secondary) -10%, rgba(255, 255, 255, 0) 60%, var(--color-secondary) 100%);
     --gradient-card: linear-gradient(90deg, var(--color-dark) 10%, rgba(255, 255, 255, 0) 90%);
+    --gradient-card-vertical: linear-gradient(180deg, var(--color-dark) 10%, rgba(255, 255, 255, 0) 90%);
     --gradient-card-inverse: linear-gradient(270deg, var(--color-dark) 10%, rgba(255, 255, 255, 0) 90%);
     --gradient-title: linear-gradient(120deg, rgba(0, 0, 0, 0.75) -70%, var(--color-text) 25%, var(--color-text) 75%, rgba(0, 0, 0, 0.75) 120%);
     --gradient-button: linear-gradient(-30deg, var(--color-dark) 0%, var(--color-secondary) 40% 60%, var(--color-primary) 120%);

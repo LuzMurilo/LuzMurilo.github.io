@@ -4,8 +4,34 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
+import { useEffect } from "react";
 
 function App() {
+
+  var navbarComponent: HTMLElement | null;
+  var navbarAnchor: HTMLElement | null;
+
+  useEffect(() => {
+    function handleScroll() {
+      if (!navbarComponent || !navbarAnchor) {
+        navbarComponent = document.getElementById("navbar");
+        navbarAnchor = document.getElementById("anchor");
+        return;
+      }
+
+      const topBorder = navbarAnchor.getBoundingClientRect().top;
+
+      topBorder >= 0
+      ? navbarComponent.classList.remove("fixed")
+      : navbarComponent.classList.add("fixed");
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return (() => {
+      window.removeEventListener('scroll', handleScroll);
+    })
+  }, [])
 
   return (
     <BrowserRouter>

@@ -16,8 +16,18 @@
 
 .projectsGrid {
     display: grid;
+    grid-template-areas: 
+        ". a ."
+        ". . ."
+        ". . .";
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-auto-rows: 24px;
+    gap: 8px;
+}
+
+.space1 {
+    grid-area: a;
+    grid-row-end: span 2;
 }
 
 .projectCard {
@@ -25,18 +35,25 @@
     background: var(--gradient-dark);
     border: 2px solid var(--color-dark);
     border-radius: 16px;
+    grid-row-end: span 6;
+    position: relative;
+    box-shadow: 1px 1px 2px #000;
 }
 
 .projectCard img {
-    width: 192px;
-    height: 192px;
-    border-radius: 16px;
+    width: 148px;
+    height: 148px;
     object-fit: cover;
 }
 
 .projectTitle {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
     text-align: center;
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--color-text-secondary);
+    background: var(--color-bg-alpha);
 }

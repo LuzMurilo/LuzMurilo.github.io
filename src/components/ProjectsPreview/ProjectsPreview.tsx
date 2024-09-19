@@ -15,6 +15,7 @@ function ProjectsPreview() {
     <section className={styles.projects} id="projects">
         <div className={styles.container}>
             <div className={styles.projectsGrid}>
+              <div className={styles.space1}></div>
               { projects.map((project, id) => {
                 return (
                   <div className={styles.projectCard} key={id}>
