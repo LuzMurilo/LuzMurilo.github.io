@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
+import Contact from "./pages/Contact";
 import { useEffect } from "react";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/experiences" element={<Experiences />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

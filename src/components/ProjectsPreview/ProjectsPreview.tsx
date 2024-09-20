@@ -1,22 +1,24 @@
 
-import { NavLink } from "react-router-dom";
+import { getImageURL } from "../../utils";
 import styles from "./ProjectsPreview.module.css";
 
-import projects from "../../data/projects.json";
-import { getImageURL } from "../../utils";
+import data from "../../data/projects.json";
+import Button from "../Button/Button";
 
 function ProjectsPreview() {
-  if (!projects || projects.length === 0)
+  if (!data)
   {
-    return <h1>No projects to show</h1>
+    return <h1>Failed to get projects data!</h1>
   }
+
+
 
   return (
     <section className={styles.projects} id="projects">
         <div className={styles.container}>
             <div className={styles.projectsGrid}>
               <div className={styles.space1}></div>
-              { projects.map((project, id) => {
+              { data.projects.map((project, id) => {
                 return (
                   <div className={styles.projectCard} key={id}>
                     {project.imageSrc? <img src={getImageURL(project.imageSrc)} alt={`${project.title} thumbnail`} width="256px" height="256px"/> : <img src={getImageURL("/projects/project.png")} alt="default thumbnail"/>}
@@ -26,8 +28,8 @@ function ProjectsPreview() {
               })}
             </div>
             <div className={styles.projectsCall}>
-                <h2 className={styles.projectsText}>Take a look at all my personal projects</h2>
-                <NavLink to="/projects" className={styles.projectsBtn}>See Projects</NavLink>
+                <h2 className={styles.projectsText}>{data.homePageText}</h2>
+                <Button to="/projects" className={styles.projectsBtn}>See Projects</Button>
             </div>
         </div>
     </section>

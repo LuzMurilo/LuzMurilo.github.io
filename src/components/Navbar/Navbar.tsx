@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { getImageURL } from "../../utils";
 import { useState } from "react";
@@ -10,10 +10,7 @@ const Navbar = () => {
   return (
     <>
         <nav className={styles.navbar} id="navbar">
-            <a className={styles.title} href="/" 
-                onClick={() => setMenuOpen(false)}>
-                Portfolio
-            </a>
+            <Link to="/" className={styles.title}>Murilo Luz Stucki</Link>
             <div className={styles.menu}>
                 <img className={styles.menuBtn} 
                     src={menuOpen ? getImageURL("nav/closeIcon.png") : getImageURL("nav/menuIcon.png")} 
@@ -31,7 +28,7 @@ const Navbar = () => {
                         <NavLink to="/projects">Projects</NavLink>
                     </li>
                     <li className={styles.navItem}>
-                        <a href="#contact">Contact</a>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </div>

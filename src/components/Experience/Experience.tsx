@@ -4,6 +4,7 @@ import { getImageURL } from "../../utils";
 
 import skills from "../../data/skills.json";
 import experiences from "../../data/experience.json";
+import Button from "../Button/Button";
 
 
 function Experience() {
@@ -40,7 +41,7 @@ function Experience() {
                 }
                 </ul>
             </div>
-            <NavLink to="/experiences" className={styles.detailsBtn}>+ Details</NavLink>
+            <Button to="/experiences" className={styles.detailsBtn}>+ Details</Button>
         </div>
     </section>
   )
