@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
 import Contact from "./pages/Contact";
 import { useEffect } from "react";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -48,6 +49,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </BrowserRouter>
   )
