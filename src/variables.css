@@ -15,9 +15,8 @@
     --gradient-dark: linear-gradient(150deg, var(--color-dark) 20%, rgba(255, 255, 255, 0) 60%, var(--color-dark) 100%);
     --gradient-bg: linear-gradient(270deg, var(--color-bg) 40%, rgba(255, 255, 255, 0) 100%);
     --gradient-bg-vertical: linear-gradient(0deg, var(--color-bg) 40%, rgba(255, 255, 255, 0) 100%);
-    --gradient-navbar: linear-gradient(150deg, var(--color-secondary) 10%,var(--color-bg-alpha) 40%, var(--color-secondary) 80%);
     --gradient-primary: linear-gradient(150deg, var(--color-primary) 0%, var(--color-dark) 60%, var(--color-primary) 120%);
-    --gradient-secondary: linear-gradient(150deg, var(--color-secondary) -10%, rgba(255, 255, 255, 0) 60%, var(--color-secondary) 100%);
+    --gradient-secondary: linear-gradient(150deg, var(--color-secondary) 10%,var(--color-bg-alpha) 40%, var(--color-secondary) 80%);
     --gradient-card: linear-gradient(90deg, var(--color-dark) 10%, rgba(255, 255, 255, 0) 90%);
     --gradient-card-vertical: linear-gradient(180deg, var(--color-dark) 10%, rgba(255, 255, 255, 0) 90%);
     --gradient-card-inverse: linear-gradient(270deg, var(--color-dark) 10%, rgba(255, 255, 255, 0) 90%);

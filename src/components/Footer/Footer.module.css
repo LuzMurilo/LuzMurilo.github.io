@@ -4,12 +4,28 @@
     display: flex;
     width: 100%;
     justify-content: flex-start;
-    gap: 20%;
     padding: 64px 32px 64px 20%;
-    background: var(--gradient-dark);
+    background: var(--gradient-secondary);
     margin-top: 64px;
+    border-top: 2px solid var(--color-dark);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
 }
 
 .info img {
     width: 128px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 10%;
+    padding: 16px 0% 16px 10%;
+    border-left: 2px solid var(--color-secondary);
 }
