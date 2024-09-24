@@ -22,4 +22,5 @@
 .button:hover {
     background-position: 40% 40%;
     background-size: 300% 250%;
+    color: var(--color-text);
 }

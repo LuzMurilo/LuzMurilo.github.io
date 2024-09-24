@@ -29,3 +29,21 @@
     padding: 16px 0% 16px 10%;
     border-left: 2px solid var(--color-secondary);
 }
+
+@media screen and (max-width: 790px) {
+    .footer {
+        padding: 32px 16px;
+    }
+
+    .info {
+        width: 40%;
+        text-align: center;
+    }
+    .info img {
+        width: 64px;
+    }
+
+    .navigation {
+        width: 50%;
+    }
+}

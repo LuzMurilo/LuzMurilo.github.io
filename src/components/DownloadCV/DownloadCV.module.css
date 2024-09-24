@@ -1,0 +1,28 @@
+.downloadCV {
+    padding: 32px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: fit-content;
+
+    background: var(--gradient-dark);
+    border: 2px solid var(--color-dark);
+    box-shadow: 1px 1px 2px #000;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+@media screen and (max-width: 790px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

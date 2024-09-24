@@ -16,6 +16,11 @@ a {
     text-decoration-line: none;
     text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
 }
 
 ul {
