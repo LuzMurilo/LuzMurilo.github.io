@@ -1,0 +1,51 @@
+@import "../../variables.css";
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+}
+
+.title {
+    width: 100%;
+    max-width: 1024px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.box {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--gradient-dark);
+    border: 2px solid var(--color-dark);
+    box-shadow: 1px 1px 2px #000;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.textContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-size: 1.25rem;
+    padding: 32px;
+}
+
+.linksContent {
+    width: 50%;
+    padding: 32px;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
