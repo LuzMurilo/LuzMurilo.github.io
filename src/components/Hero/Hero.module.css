@@ -9,18 +9,21 @@
     justify-content: flex-start;
     align-items: center;
     z-index: 0;
+    padding: 64px 0;
 }
 
 .container {
     position: relative;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 64px;
     z-index: 1;
-    gap: 32px;
+    gap: 5vw;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1536px;
+    min-height: 50vh;
 }
 
 .content {
@@ -49,7 +52,7 @@
 
 
 .heroImg {
-    width: 30vw;
+    width: 25vw;
     max-width: 512px;
     z-index: 1;
 

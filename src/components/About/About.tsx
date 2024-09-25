@@ -5,7 +5,7 @@ function About() {
   return (
     <section className={styles.about} id="about">
         <div className={styles.container}>
-            <h1 className={styles.title}>About</h1>
+            <h1 className={styles.title}>About me</h1>
             <div className={styles.content}>
                 <img className={styles.aboutImg} src={getImageURL("about/aboutImage.png")} alt="about image of Murilo" />
                 <ul className={styles.cardList}>

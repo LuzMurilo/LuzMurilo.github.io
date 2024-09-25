@@ -50,12 +50,24 @@ a.active {
     text-decoration: underline;
 }
 
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
 .socialBtn {
     transition: 0.2s ease;
-    margin-left: 16px;
 }
 .socialBtn:hover {
     color: var(--color-primary);
+}
+
+@media screen and (max-width: 980px) {
+    .navbar {
+        padding: 32px 2%;
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -71,21 +83,26 @@ a.active {
     }
 
     .navList {
+        position: absolute;
+        top: 0;
+        right: 48px;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        padding: 32px 32px 16px 16px;
+        padding: 16px;
         gap: 16px;
         background: var(--color-dark);
         box-shadow: 2px 2px 4px #000;
         border-bottom: 2px solid var(--color-dark);
         border-radius: 4px;
-        transform: scaleY(1);
-        transition: 0.2s ease;
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
     }
 
     .hidden {
-        transform: scaleY(0);
+        transform: translateY(-50%);
+        opacity: 0;
     }
 
     .menuBtn {
@@ -93,4 +110,5 @@ a.active {
         display: block;
         cursor: pointer;
     }
+
 }
