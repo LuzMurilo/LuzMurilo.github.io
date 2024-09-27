@@ -12,7 +12,7 @@
     font-weight: 600;
     text-align: center;
     box-shadow: var(--shadow-button);
-    display: block;
+    display: inline-block;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     -webkit-transition: all .5s ease;

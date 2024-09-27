@@ -1,8 +1,9 @@
+import ProjectsFull from "../components/ProjectsFull/ProjectsFull"
 
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <ProjectsFull />
   )
 }
 
