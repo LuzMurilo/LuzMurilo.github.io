@@ -2,7 +2,7 @@
 
 .projects {
     width: 100%;
-    padding: 64px 16px;
+    padding: 64px 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@
 
 .title {
     width: 100%;
-    max-width: 1088px;
+    max-width: 1344px;
     background: var(--gradient-secondary);
     border: 2px solid var(--color-dark);
     box-shadow: 1px 1px 2px #000;
@@ -23,24 +23,34 @@
     text-align: center;
 }
 
-.cardsContainer {
+.columns {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1280px;
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
     justify-content: center;
 }
 
+.cardsContainer {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
 .card {
-    max-width: 496px;
+    max-width: 608px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
 
-    padding: 16px;
+    padding: 32px 16px;
     background: var(--gradient-dark);
     border: 2px solid var(--color-dark);
     box-shadow: 1px 1px 2px #000;
@@ -52,7 +62,11 @@
 }
 
 .cardDescription {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.cardDescription p {
+    margin-bottom: 16px;
 }
 
 .cardButtons {
@@ -60,4 +74,26 @@
     width: 100%;
     justify-content: center;
     gap: 16px;
+}
+
+.codeBtn {
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.demoBtn {
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.cardActive {
+    max-width: 992px;
+}
+
+@media screen and (max-width: 680px) {
+    .projects {
+        padding: 64px 16px;
+    }
 }

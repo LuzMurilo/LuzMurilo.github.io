@@ -10,7 +10,7 @@
         },
         {
             "title": "Constellation",
-            "description": "A game made for the Lost Relic GameJam 2022. The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made. I developed this game from scratch in a week. All aspects, except the music, were made by me.",
+            "description": "<p>A game made for the Lost Relic GameJam 2022. </p> <p> The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. </p> <p> In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made.</p> <p> I developed this game from scratch in a week. All aspects, except the music, were made by me.</p>",
             "imageSrc": "projects/constellation.png",
             "reposirory": "https://gitlab.com/luzmurilo/moonshooter",
             "demo": "https://muriloluz.itch.io/constellation"
