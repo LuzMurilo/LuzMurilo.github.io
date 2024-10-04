@@ -61,10 +61,10 @@
     padding: 16px;
     border-radius: 16px;
     border: 2px solid transparent;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 .skillItem:hover {
-    border: 2px solid var(--color-secondary);
+    box-shadow: 0 0 4px var(--color-primary);
 }
 .skillItem img {
     width: 64px;
