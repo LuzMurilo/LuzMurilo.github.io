@@ -2,6 +2,7 @@ import { getImageURL } from "../../utils";
 import styles from "./About.module.css";
 
 import aboutData from "../../data/about.json";
+import SvgIcon from "../SVG/SvgIcon";
 
 function About() {
   return (
@@ -12,7 +13,14 @@ function About() {
                 <img className={styles.aboutImg} src={getImageURL("about/aboutImage.png")} alt="about image of Murilo" />
                 <ul className={styles.cardList}>
                     {aboutData.paragraphs.map((paragraph, index) => <li className={styles.card} key={index}>
-                        <img className={styles.cardImg} src={getImageURL(paragraph.image)} alt="cursor icon" />
+                        {
+                            paragraph.icon  ? 
+                            <div className={styles.cardImg}>
+                                <SvgIcon icon={paragraph.icon} width="100%" height="100%"/>
+                            </div> 
+                            : 
+                            <img className={styles.cardImg} src={getImageURL(paragraph.image || "about/cursorIcon.png")} alt="icon" />
+                        }
                         <p  className={styles.cardText}>{paragraph.text}</p>
                     </li>)}
                 </ul>

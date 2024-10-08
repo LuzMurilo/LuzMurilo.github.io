@@ -9,14 +9,14 @@
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1152px;
     
     background: var(--gradient-dark);
     border: 2px solid var(--color-dark);
     box-shadow: 1px 1px 2px #000;
     border-radius: 16px;
 
-    padding: 32px 64px;
+    padding: 32px;
     z-index: 1;
 }
 
@@ -26,6 +26,7 @@
 }
 
 .content {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -34,10 +35,11 @@
 }
 
 .aboutImg {
-    width: 75%;
+    width: 30%;
 }
 
 .cardList {
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -49,8 +51,10 @@
 .card {
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding: 16px;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 16px 32px;
+
     background: var(--gradient-card);
     background-size: 0 100%;
     background-repeat: no-repeat;
@@ -63,20 +67,40 @@
     background-size: 100% 100%;
 }
 
+.cardImg {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    color: var(--color-primary);
+}
+
 .cardText {
     text-align: left;
     font-size: 1.25rem;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 980px) {
     .aboutImg {
-        display: none;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: -128px;
+        width: 30%;
     }
 
     .container {
         padding: 0px;
         background: none;
         border: none;
+        box-shadow: none;
+    }
+
+    .content {
+        padding: 32px;
+    }
+
+    .cardList {
+        width: 100%;
     }
 
     .card {
@@ -84,8 +108,22 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
     .cardText {
         font-size: 1rem;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .aboutImg {
+        top: -64px;
+    }
+
+    .cardImg {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
     }
 }
