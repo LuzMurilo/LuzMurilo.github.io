@@ -1,0 +1,17 @@
+{
+    "summary":"Hard-working and creative Computer Engineer with 3+ years of experience and knowledge in a wide range of fields, fast learner and curious by nature. Worked in Game Development and Front-end for most of my professional career.",
+    "paragraphs": [
+        {
+            "text":"Some text about me, graduated in Computer Engineering and worked as a Game Developer and Web Developer",
+            "image":"about/cursorIcon.png"
+        },
+        {
+            "text":"Some text about me, graduated in Computer Engineering and worked as a Game Developer and Web Developer",
+            "image":"about/serverIcon.png"
+        },
+        {
+            "text":"Some text about me, graduated in Computer Engineering and worked as a Game Developer and Web Developer",
+            "image":"about/uiIcon.png"
+        }
+    ]
+}
