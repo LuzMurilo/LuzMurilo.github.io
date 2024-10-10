@@ -10,7 +10,7 @@ function About() {
         <div className={styles.container}>
             <h1 className={styles.title}>About me</h1>
             <div className={styles.content}>
-                <img className={styles.aboutImg} src={getImageURL("about/aboutImage.png")} alt="about image of Murilo" />
+                
                 <ul className={styles.cardList}>
                     {aboutData.paragraphs.map((paragraph, index) => <li className={styles.card} key={index}>
                         {
@@ -26,6 +26,7 @@ function About() {
                 </ul>
             </div>
         </div>
+        <img className={styles.aboutImg} src={getImageURL("about/programming-me.png")} alt="about image of Murilo" />
     </section>
   )
 }

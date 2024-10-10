@@ -32,6 +32,7 @@
     align-items: flex-start;
     z-index: 1;
     gap: 32px;
+    width: 70%;
 }
 
 .title {
@@ -52,8 +53,9 @@
 
 
 .heroImg {
-    width: 25vw;
+    width: 30%;
     max-width: 512px;
+    min-width: 192px;
     z-index: 1;
 
     animation-name: floating;
@@ -103,8 +105,13 @@
 }
 
 @media screen and (max-width: 790px) {
+    .heroSection {
+        padding: 0;
+    }
+
     .container {
         flex-direction: column-reverse;
+        padding: 32px;
     }
 
     .content {

@@ -30,7 +30,7 @@ function Experience() {
                                 {experience.imageSrc && <img src={getImageURL(experience.imageSrc)} alt={experience.organisation}></img>}
                                 <div className={styles.cardContent}>
                                     <div className={styles.cardTitle}>
-                                        <h2>{experience.role}, {experience.organisation}</h2>
+                                        <h2 className={styles.organisation}>{experience.role}, {experience.organisation}</h2>
                                         <span className={styles.dates}>{experience.startDate} - {experience.endDate}</span>
                                     </div>
                                     <ul className={styles.cardAssignments}>{experience.assignments.map((ass, index) => <li key={"assignment"+index}>{ass}</li>)}</ul>

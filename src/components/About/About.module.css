@@ -3,13 +3,16 @@
 .about {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 32px;
     width: 100%;
     padding: 32px;
     z-index: 0;
+    position: relative;
 }
 
 .container {
-    max-width: 1152px;
+    max-width: 1024px;
     
     background: var(--gradient-dark);
     border: 2px solid var(--color-dark);
@@ -35,11 +38,28 @@
 }
 
 .aboutImg {
-    width: 30%;
+    width: 384px;
+
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, -10px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -10px);
+    }
 }
 
 .cardList {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,13 +99,14 @@
     font-size: 1.25rem;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1110px) {
     .aboutImg {
         position: absolute;
         z-index: -1;
-        right: 0;
-        top: -128px;
-        width: 30%;
+        right: 10%;
+        top: -96px;
+        width: 25%;
+        min-width: 128px;
     }
 
     .container {
@@ -105,10 +126,15 @@
 
     .card {
         background-size: 100% 100%;
+        background: var(--gradient-card-inverse);
     }
 }
 
 @media screen and (max-width: 580px) {
+    .card {
+        flex-direction: column;
+    }
+
     .cardText {
         font-size: 1rem;
     }
@@ -118,7 +144,8 @@
     }
 
     .aboutImg {
-        top: -64px;
+        top: -32px;
+        right: -16px;
     }
 
     .cardImg {
