@@ -17,14 +17,15 @@
       "imageSrc": "history/ogamonista.png"
     },
     {
-      "role": "SWE Intern",
-      "organisation": "Netflix",
-      "startDate": "Apr, 2020",
-      "endDate": "Jun, 2020",
+      "role": "Web Development Intern",
+      "organisation": "SFLabs",
+      "startDate": "Oct 2020",
+      "endDate": "Apr 2021",
       "assignments": [
-        "Worked on component library",
-        "Helped create UI components"
+        "Developed 10+ static websites using React.js and Gatsby.js.",
+        "Heavy focus on SEO and conversion rate",
+        "Helped with the automation of the build and deploy pipeline."
       ],
-      "imageSrc": "history/netflix.png"
+      "imageSrc": "history/logoSFLabs.png"
     }
   ]
