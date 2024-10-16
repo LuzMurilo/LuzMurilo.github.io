@@ -1,4 +1,5 @@
-[
+{
+  "jobs": [
     {
       "role": "Office Assistant",
       "organisation": "Masters Pool Resurfacing",
@@ -26,6 +27,33 @@
         "Heavy focus on SEO and conversion rate",
         "Helped with the automation of the build and deploy pipeline."
       ],
-      "imageSrc": "history/logoSFLabs.png"
+      "imageSrc": "history/logoSFLabs.png",
+      "website": "https://sflabs.com.br/"
+    }
+  ],
+  "freelances": [
+    {
+      "role": "E-commerce Manager",
+      "organisation": "SOS Patas",
+      "startDate": "Sep 2024",
+      "endDate": "Present",
+      "assignments": ["Created an e-commerce website using Loja Integrada platform", "Integrated the website with Facebook, Instagram, logistics provider and the ERP System", "Working part-time to manage the sales flow, create ads for the products and make changes when necessary."],
+      "website": "https://sos-patas.lojaintegrada.com.br/"
+    },
+    {
+      "role": "Tournament Website",
+      "organisation": "O GAMONISTA",
+      "startDate": "Jun 2023",
+      "endDate": "Present",
+      "assignments": ["Created a website to show the results of several backgammon tournaments", "Developed a solution with Google App Script to feed the information from Google Sheets directly to the website", "Still working with the owner to make adjustments for new tournaments and improvements to the website"],
+      "website": "https://williamwehby.com.br"
+    },
+    {
+      "role": "Artist and Animator",
+      "startDate": "Open to Work",
+      "endDate": "Comissions",
+      "assignments": ["I made digital illustrations and animations to be used in games and advertising", "Mostly pixel-art using Photoshop, but also used Illustrator and Krita", "You can see some not-comissions illustrations in the link below"],
+      "website": "https://www.instagram.com/luzmurilo.art/"
     }
   ]
+}

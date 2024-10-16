@@ -24,7 +24,7 @@ function Experience() {
                     })}
                 </div>
                 <ul className={styles.cardList}>{
-                    experiences.map((experience, id) => {
+                    experiences.jobs.map((experience, id) => {
                         return (
                             <NavLink to="/experiences" className={styles.card} key={id}>
                                 {experience.imageSrc && <img src={getImageURL(experience.imageSrc)} alt={experience.organisation}></img>}
