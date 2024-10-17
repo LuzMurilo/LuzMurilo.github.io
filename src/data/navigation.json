@@ -1,0 +1,33 @@
+{
+    "title": "Murilo Luz Stucki",
+    "pages": [
+        {
+            "pageName":"Home",
+            "path": "/"
+        },
+        {
+            "pageName":"Experiences",
+            "path": "/experiences"
+        },
+        {
+            "pageName":"Projects",
+            "path": "/projects"
+        },
+        {
+            "pageName":"Contact",
+            "path": "/contact"
+        }
+    ],
+    "socials": [
+        {
+            "id": "linkedin",
+            "link": "https://www.linkedin.com/in/luz-murilo/",
+            "icon": "linkedin"
+        },
+        {
+            "id": "github",
+            "link": "https://github.com/LuzMurilo",
+            "icon": "github"
+        }
+    ]
+}

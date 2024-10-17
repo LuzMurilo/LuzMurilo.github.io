@@ -1,5 +1,10 @@
 {
+    "greetings": "Greetings!",
     "summary":"Hard-working and creative Computer Engineer with 3+ years of experience and knowledge in a wide range of fields, fast learner and curious by nature. Worked in Game Development and Front-end for most of my professional career.",
+    "heroButton": {
+        "text": "Contact Me",
+        "path": "/contact"
+    },
     "paragraphs": [
         {
             "text":"I learned how to code in high-school and fell in love with the idea of creating my own applications and solutions, that's why I decided to study Computer Engineering later in college.",
