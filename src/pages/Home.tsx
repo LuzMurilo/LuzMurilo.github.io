@@ -10,8 +10,8 @@ function Home() {
     <>
         <Hero />
         <About />
-        <Experience />
         <ProjectsPreview />
+        <Experience />
         <DownloadCV />
     </>
   )

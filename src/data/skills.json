@@ -30,5 +30,21 @@
     {
       "title": "Figma",
       "imageSrc": "skills/figma.png"
+    },
+    {
+      "title": "Photoshop",
+      "imageSrc": "skills/photoshop.png"
+    },
+    {
+      "title": "Illustrator",
+      "imageSrc": "skills/illustrator.png"
+    },
+    {
+      "title": "Bling ERP",
+      "imageSrc": "skills/bling.png"
+    },
+    {
+      "title": "NGINX",
+      "imageSrc": "skills/nginx.png"
     }
   ]

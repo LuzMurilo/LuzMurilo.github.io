@@ -9,6 +9,8 @@ import Button from "../Button/Button";
 
 function Experience() {
 
+    const maxSkills = 8;
+
   return (
     <section className={styles.experience} id="experience">
         <div className={styles.container}>
@@ -16,6 +18,7 @@ function Experience() {
             <div className={styles.content}>
                 <div className={styles.skills}>
                     {skills && skills.map((skill, id) => {
+                        if (id >= maxSkills) return;
                         return( 
                         <div className={styles.skillItem} key={id}>
                             <img src={getImageURL(skill.imageSrc)} alt={skill.title + "icon"} />
