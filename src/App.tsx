@@ -8,6 +8,8 @@ import Contact from "./pages/Contact";
 import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 
+import navigationData from "./data/navigation.json";
+
 function App() {
 
   var navbarComponent: HTMLElement | null;
@@ -39,7 +41,7 @@ function App() {
     <BrowserRouter>
       <div className={styles.app}>
         <header>
-          <Navbar />
+          <Navbar navData={navigationData} language="pt" />
         </header>
         <main>
           <Routes>

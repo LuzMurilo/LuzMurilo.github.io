@@ -6,9 +6,28 @@ import SvgIcon from "../SVG/SvgIcon";
 
 import data from "../../data/navigation.json";
 
-const Navbar = () => {
+
+interface navbarProps {
+    setLanguage?: () => void;
+    language: string;
+    navData: {
+        title: string;
+        pages: {
+            pageName: { [key:string] : string}
+            path: string;
+        }[];
+        socials: {
+            id: string;
+            link: string;
+            icon: string;
+        }[];
+    };
+}
+
+const Navbar = ({ language = "en", navData }: navbarProps) => {
 
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
+    // const [language, setLanguage] = useState<string>("en");
 
   return (
     <>
@@ -17,13 +36,13 @@ const Navbar = () => {
             <div className={styles.menu}>
                 <ul className={`${styles.navList} ${!menuOpen && styles.hidden}`}
                     onClick={() => setMenuOpen(false)}>
-                    {data.pages.map((page) => 
-                            <li className={styles.navItem} key={page.pageName}>
-                                <NavLink to={page.path}>{page.pageName}</NavLink>
-                            </li>
+                    {navData.pages.map((page) => 
+                        <li className={styles.navItem} key={page.pageName[language]}>
+                            <NavLink to={page.path}>{page.pageName[language]}</NavLink>
+                        </li>
                     )}
                     <li className={`${styles.navItem} ${styles.socials}`}>
-                        {data.socials.map((social) => 
+                        {navData.socials.map((social) => 
                             <a href={social.link} target="_blank" className={styles.socialBtn} key={social.id}>
                                 <SvgIcon icon={social.icon} />
                             </a>

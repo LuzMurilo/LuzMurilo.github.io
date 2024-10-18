@@ -2,19 +2,31 @@
     "title": "Murilo Luz Stucki",
     "pages": [
         {
-            "pageName":"Home",
+            "pageName": {
+                "en":"Home",
+                "pt":"Início"
+            },
             "path": "/"
         },
         {
-            "pageName":"Experiences",
+            "pageName":{
+                "en":"Experiences",
+                "pt":"Experiência"
+            },
             "path": "/experiences"
         },
         {
-            "pageName":"Projects",
+            "pageName":{
+                "en":"Projects",
+                "pt":"Projetos"
+            },
             "path": "/projects"
         },
         {
-            "pageName":"Contact",
+            "pageName":{
+                "en":"Contact",
+                "pt":"Contato"
+            },
             "path": "/contact"
         }
     ],
