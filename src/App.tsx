@@ -5,12 +5,14 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
 import Contact from "./pages/Contact";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 
 import navigationData from "./data/navigation.json";
 
 function App() {
+
+  const [language, setLanguage] = useState<string>("en");
 
   var navbarComponent: HTMLElement | null;
   var navbarAnchor: HTMLElement | null;
@@ -41,7 +43,7 @@ function App() {
     <BrowserRouter>
       <div className={styles.app}>
         <header>
-          <Navbar navData={navigationData} language="pt" />
+          <Navbar navData={navigationData} language={language} setLanguage={setLanguage}/>
         </header>
         <main>
           <Routes>

@@ -8,7 +8,7 @@ import data from "../../data/navigation.json";
 
 
 interface navbarProps {
-    setLanguage?: () => void;
+    setLanguage?: (lang:string) => void;
     language: string;
     navData: {
         title: string;
@@ -24,15 +24,24 @@ interface navbarProps {
     };
 }
 
-const Navbar = ({ language = "en", navData }: navbarProps) => {
+const Navbar = ({ setLanguage = () => {}, language = "en", navData }: navbarProps) => {
 
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
-    // const [language, setLanguage] = useState<string>("en");
 
   return (
     <>
         <nav className={styles.navbar} id="navbar">
-            <Link to="/" className={styles.title}>{data.title}</Link>
+            <div className={styles.leftContainer}>
+                <Link to="/" className={styles.title}>{data.title}</Link>
+                <div className={styles.flags}>
+                    <div className={language === "pt"? styles.flagActive: styles.flagInactive} onClick={() => setLanguage("pt")}>
+                        <img src={getImageURL("icons/br.svg")} alt="bandeira Brasil"/>
+                    </div>
+                    <div className={language === "en"? styles.flagActive: styles.flagInactive} onClick={() => setLanguage("en")}>
+                        <img src={getImageURL("icons/us.svg")} alt="US flag"/>
+                    </div>
+                </div>
+            </div>
             <div className={styles.menu}>
                 <ul className={`${styles.navList} ${!menuOpen && styles.hidden}`}
                     onClick={() => setMenuOpen(false)}>
