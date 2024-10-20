@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 
+// DATA
 import navigationData from "./data/navigation.json";
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
         </header>
         <main>
           <Routes>
-            <Route index element={<Home />} />
+            <Route index element={<Home language={language} />}  />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/experiences" element={<Experiences />} />
             <Route path="/contact" element={<Contact />} />

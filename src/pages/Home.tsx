@@ -4,12 +4,18 @@ import Experience from "../components/Experience/Experience"
 import Hero from "../components/Hero/Hero"
 import ProjectsPreview from "../components/ProjectsPreview/ProjectsPreview"
 
+//DATA
+import aboutData from "../data/about.json";
 
-function Home() {
+interface HomeProps {
+  language: string;
+}
+
+function Home({ language="en" }: HomeProps) {
   return (
     <>
-        <Hero />
-        <About />
+        <Hero heroData={aboutData.hero} language={language}/>
+        <About aboutData={aboutData} language={language}/>
         <ProjectsPreview />
         <Experience />
         <DownloadCV />

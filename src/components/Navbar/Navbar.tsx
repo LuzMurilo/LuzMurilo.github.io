@@ -4,8 +4,6 @@ import { getImageURL } from "../../utils";
 import { useState } from "react";
 import SvgIcon from "../SVG/SvgIcon";
 
-import data from "../../data/navigation.json";
-
 
 interface navbarProps {
     setLanguage?: (lang:string) => void;
@@ -32,7 +30,7 @@ const Navbar = ({ setLanguage = () => {}, language = "en", navData }: navbarProp
     <>
         <nav className={styles.navbar} id="navbar">
             <div className={styles.leftContainer}>
-                <Link to="/" className={styles.title}>{data.title}</Link>
+                <Link to="/" className={styles.title}>{navData.title}</Link>
                 <div className={styles.flags}>
                     <div className={language === "pt"? styles.flagActive: styles.flagInactive} onClick={() => setLanguage("pt")}>
                         <img src={getImageURL("icons/br.svg")} alt="bandeira Brasil"/>

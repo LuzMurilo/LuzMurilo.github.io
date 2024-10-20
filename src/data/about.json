@@ -1,27 +1,55 @@
 {
-    "greetings": "Greetings!",
-    "summary":"Hard-working and creative Computer Engineer with 3+ years of experience and knowledge in a wide range of fields, fast learner and curious by nature. Worked in Game Development and Front-end for most of my professional career.",
-    "heroButton": {
-        "text": "Contact Me",
-        "path": "/contact"
+    "hero": {
+        "greetings": {
+            "en":"Greetings!",
+            "pt":"Olá!"
+        },
+        "summary": {
+            "en":"Creative and self-motivated Computer Engineer with 3+ years of professional experience solving complex problems with creativity and passion. I'm a calm person and fast-learner. With a deep understanding of Frontend and Game Development systems.",
+            "pt":"Formado em Engenharia de Computação pela USP, eu possuo mais de 3 anos de experiência profissional, resolvendo problemas complexos com criatividade e dedicação. Sou uma pessoa calma e aprendo rápido, já trabalhei como Desenvolvedor Frontend e de Games."
+        },
+        "heroButton": {
+            "text": {
+                "en":"Contact Me",
+                "pt":"Entre em Contato"
+            },
+            "path": "/contact"
+        },
+        "heroImage": "hero/heroImage.png"
+    },
+    "title": {
+        "en":"About me",
+        "pt":"Sobre mim"
     },
     "paragraphs": [
         {
-            "text":"I learned how to code in high-school and fell in love with the idea of creating my own applications and solutions, that's why I decided to study Computer Engineering later in college.",
+            "text":{
+                "en":"I learned how to code in high-school and fell in love with the idea of creating my own applications and solutions, that's why I decided to study Computer Engineering later in college.",
+                "pt":"Eu aprendi a programar no ensino médio e me apaixonei pela ideia de criar meus próprios aplicativos e resolver problemas, por conta disso eu decidi estudar Engenharia de Computação na faculdade."
+            },
             "icon": "code"
         },
         {
-            "text":"My interests in technology range from Game development, Web development, Systems architecture, Network, and many more. I worked professionally with Unity, Javascript, React.js, Figma, Firebase and NGINX.",
+            "text":{
+                "en":"My interests range from Game development, Web development, Systems architecture, Network, and many more. I worked professionally with Unity, Javascript, React.js, Figma, Firebase and NGINX.",
+                "pt":"Meus interesses variam entre Desenvolvimento de Games, Web, Estrutura de Dados, Arquitetura de Sistemas, Redes entre outros. Já trabalhei profissionalmente com Unity, Javascript, React.js, Figma e Firebase."
+            },
             "icon": "computer"
         },
         {
-            "text":"Always focused on finding the best solutions, I think being able to understand all parts of a project and willing to learn new things is essential to be successful in any tech-related field. That's why I never stop studying!",
+            "text":{
+                "en":"Always focused on finding the best solutions, I think being able to understand all parts of a project and willing to learn new things is essential to be successful in any tech-related field. That's why I never stop studying!",
+                "pt":"Sempre estou focado em encontrar as melhores soluções. Acredito que ser capaz de entender todas as partes de um projeto e estar aberto a aprender coisas novas são características essenciais para ter sucesso em qualquer área de tecnologia."
+            },
             "icon": "hierarchy"
         },
         {
-            "text":"I also worked in administrative positions and customer relations for small companies and I do some art commissions from time to time. In my free time I like to play games and watch videos to relax.",
-            "image":"about/uiIcon.png",
+            "text":{
+                "en":"I also worked in administrative positions and customer relations for small companies and I do some art commissions from time to time. In my free time I like to play games and watch videos to relax.",
+                "pt":"Também já trabalhei em posições administrativas e atendimento ao cliente para pequenas empresas, e às vezes faço arte digital para comissões. No meu tempo livre eu gosto de jogar jogos cooperativos e assistir vídeos e animes para relaxar."
+            },
             "icon": "gamepad"
         }
-    ]
+    ],
+    "image":"about/programming-me.png"
 }

@@ -1,14 +1,27 @@
 import { getImageURL } from "../../utils";
 import styles from "./About.module.css";
 
-import aboutData from "../../data/about.json";
 import SvgIcon from "../SVG/SvgIcon";
 
-function About() {
+interface AboutProps {
+    language: string;
+    aboutData: {
+        paragraphs: {
+            text:{ [key:string]: string};
+            icon: string;
+        }[];
+        image: string;
+        title: { [key:string]: string };
+    };
+}
+
+function About({ language = "en", aboutData }: AboutProps) {
+    if (!aboutData) return (<h1>About data Missing!</h1>);
+
   return (
     <section className={styles.about} id="about">
         <div className={styles.container}>
-            <h1 className={styles.title}>About me</h1>
+            <h1 className={styles.title}>{aboutData.title[language]}</h1>
             <div className={styles.content}>
                 
                 <ul className={styles.cardList}>
@@ -19,14 +32,16 @@ function About() {
                                 <SvgIcon icon={paragraph.icon} width="100%" height="100%"/>
                             </div> 
                             : 
-                            <img className={styles.cardImg} src={getImageURL(paragraph.image || "about/cursorIcon.png")} alt="icon" />
+                            <div className={styles.cardImg}>
+                                <SvgIcon icon="code" width="100%" height="100%"/>
+                            </div> 
                         }
-                        <p  className={styles.cardText}>{paragraph.text}</p>
+                        <p  className={styles.cardText}>{paragraph.text[language]}</p>
                     </li>)}
                 </ul>
             </div>
         </div>
-        <img className={styles.aboutImg} src={getImageURL("about/programming-me.png")} alt="about image of Murilo" />
+        <img className={styles.aboutImg} src={getImageURL(aboutData.image)} alt="about image of Murilo" />
     </section>
   )
 }
