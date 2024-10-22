@@ -6,6 +6,8 @@ import ProjectsPreview from "../components/ProjectsPreview/ProjectsPreview"
 
 //DATA
 import aboutData from "../data/about.json";
+import projectsData from "../data/projects.json";
+import otherData from "../data/others.json";
 
 interface HomeProps {
   language: string;
@@ -16,9 +18,9 @@ function Home({ language="en" }: HomeProps) {
     <>
         <Hero heroData={aboutData.hero} language={language}/>
         <About aboutData={aboutData} language={language}/>
-        <ProjectsPreview />
+        <ProjectsPreview projectsData={projectsData} language={language}/>
         <Experience />
-        <DownloadCV />
+        <DownloadCV downloadCVData={otherData.downloadCV} language={language}/>
     </>
   )
 }

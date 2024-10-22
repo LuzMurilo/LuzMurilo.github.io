@@ -1,32 +1,75 @@
 {
-    "homePageText": "I'm always working on a personal project to practice every skill that I learn. You can take a look at some of them in the Projects page.",
+    "homePageText": {
+        "en":"I'm always working on my personal projects to practice and learn new skills. You can take a look at some of them in the Projects page.",
+        "pt":"Estou sempre trabalhando em projetos pessoais para praticar e aprender novas habilidades. Você pode dar uma olhada em alguns deles na página de Projetos."
+    },
+    "projectsPageButton": {
+        "text": {
+            "en":"See Projects",
+            "pt":"Meus Projetos"
+        },
+        "path": "/projects"
+    },
+    "pageTitle": {
+        "en": "My Projects",
+        "pt": "Meus Projetos"
+    },
     "projects": [
         {
             "title": "Infinity Run",
-            "description": "<p>A prototype for an endless runner game made in Unity for Android devices, inspired by Temple Run and Subway Surfers.</p><p>It's still in development, but I plan to upload it to the Play Store once it gets in a playable state.</p><p>It currently has randomized obstacles, coins and ground slope. And I plan to add more obstacles, enemies and power-ups.</p>",
+            "description": {
+                "en":"<p>A prototype of an endless runner game made in Unity for Android devices, inspired by Temple Run and Subway Surfers.</p><p>It's still in development, but I plan to upload it to the Play Store once it gets in a playable state.</p><p>It currently has randomized obstacles, coins and ground slope implemented. And I plan to add more obstacles, enemies and power-ups.</p>",
+                "pt":"<p>Um protótipo de um jogo estilo 'endless runner' feito em Unity para Android, inspirado em Temple Run e Subway Surfers.</p><p>Ainda está em desenvolvimento, mas meu plano é disponibilizá-lo na Play Store assim que estiver em um estado 'jogável'.</p><p>Atualmente possui geração aleatória de obstáculos, moedas e inclinação do terreno. E pretendo adicionar mais variações além de inimigos com mecânicas diferentes e power-ups.</p>"
+            },
             "imageSrc": "projects/runner.png",
             "repository": "https://github.com/LuzMurilo/infinity-run"
         },
         {
             "title": "Project Aster",
-            "description": "<p>This project is a 2D metroidvania prototype.</p><p>It's currently in the concept phase and I still need to implement and test new ideas, and flesh out the design.</p><p>The video below show the most basic functionalities for movement and combat</p>",
+           "description": {
+                "en":"<p>This is a project of a 2D metroidvania, currently paused in the prototype phase.</p><p>I still need to flesh out the design and test new ideas.</p><p>The video below show the most basic functionalities for movement and combat</p>",
+                "pt":"<p>Este é um projeto de um 'metroidvania' 2D, atualmente pausado na fase de prototipação.</p><p>Eu ainda preciso refinar o design e testar novas ideias.</p><p>O vídeo abaixo mostra as funcionalidades básicas de movimento e combate.</p>"
+            },
             "videoSrc": "https://www.youtube.com/embed/hcM00nBz1a8",
             "imageSrc": "projects/aster.png",
             "repository": "https://gitlab.com/luzmurilo/project-aster"
         },
         {
-            "title": "This Website",
-            "description": "<p>I made this website with the goal of being a customizable portfolio, a place to show my projects and experiences with more details than a resume, and with my own style.</p><p>I used React.js with TypeScript, and pure CSS.",
+            "title": "Portfolio Website",
+            "description": {
+                "en":"<p>I made this website with the goal of being a customizable portfolio, a place to show my projects and experiences with more details than a resume, and with my own style.</p><p>I used React.js with TypeScript, and pure CSS.</p>",
+                "pt":"<p>Eu fiz este site com o intuito de ser um portfólio customizável, um lugar onde eu possa mostrar meus projetos e experiências em mais detalhe do que em um currículo, além de ter meu próprio estilo.</p><p>Eu usei React.js com TypeScript e CSS puro.</p>"
+            },
             "imageSrc": "projects/portfolio.png",
             "repository": "https://github.com/LuzMurilo/portfolio-react"
         },
         {
             "title": "Constellation",
-            "description": "<p>A game made for the Lost Relic GameJam 2022. </p> <p> The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. </p> <p> In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made.</p> <p> I developed this game from scratch in a week. All aspects, except the music, were made by me.</p>",
+            "description": {
+                "en":"<p>A game made for the Lost Relic GameJam 2022. </p> <p> The theme of the Jam was 'Connection', so I my idea was to make the theme present in the core mechanic of my game. </p> <p> In this game the goal is to make connections between the 'Stars' to form the right constellation. The player is able to shoot colored 'Planets' that orbit the Star it collides with, and if another Star has a planet of the same color, a connection is made.</p> <p> I developed this game from scratch in a week. All aspects, except the music, were made by me.</p>",
+                "pt":"<p>Um jogo que eu fiz para a Lost Relic GameJam de 2022.</p><p>O tema da competição era 'Conexão', então minha ideia foi trazer o tema como mecânica principal do meu jogo.</p><p>Neste jogo o objetivo é fazer as conexões entre as 'estrelas' para formar uma constelação específica. O jogador consegue atirar 'planetas' de diferentes cores que orbitam a estrela que se chocarem, e se outra estrela tiver um planeta da mesma cor elas formam uma conexão.</p><p>Eu desenvolvi o jogo em uma semana sozinho, apenas usei efeitos sonoros e música prontos.</p>"
+            },
             "imageSrc": "projects/constellation.png",
             "repository": "https://gitlab.com/luzmurilo/moonshooter",
             "demo": "https://muriloluz.itch.io/constellation"
         }
     ],
-    "endMessage": "Thank you for visiting my humble portfolio! I'm currently working on more front-end projects to learn new skills, so come back later to see my progress!"
+    "endMessage": {
+        "en":"Thank you for visiting my humble portfolio! I'm currently working on more front-end projects to learn new skills, so I invite you to come back later and see my progress!",
+        "pt":"Obrigado por visitar o meu humilde portfólio! Estou atualmente trabalhando em mais projetos front-end para aprender novas habilidades, então eu te convido para voltar outro dia e ver o meu progresso!"
+    },
+    "buttonTexts": {
+        "repository": {
+            "en":"See the Code",
+            "pt":"Veja o Código"
+        },
+        "demo": {
+            "en":"Play the Demo",
+            "pt":"Jogue a Demo"
+        },
+        "video": {
+            "en":"Watch the Video",
+            "pt":"Assista ao Vídeo"
+        }
+    }
 }

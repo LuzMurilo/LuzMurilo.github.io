@@ -7,6 +7,7 @@ import Experiences from "./pages/Experiences";
 import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 // DATA
 import navigationData from "./data/navigation.json";
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className={styles.app}>
         <header>
           <Navbar navData={navigationData} language={language} setLanguage={setLanguage}/>
@@ -49,7 +51,7 @@ function App() {
         <main>
           <Routes>
             <Route index element={<Home language={language} />}  />
-            <Route path="/projects" element={<Projects/>} />
+            <Route path="/projects" element={<Projects language={language}/>} />
             <Route path="/experiences" element={<Experiences />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

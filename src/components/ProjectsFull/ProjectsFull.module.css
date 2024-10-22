@@ -25,6 +25,7 @@
 
 .projects h2 {
     font-weight: 500;
+    max-width: 1280px;
 }
 
 .columns {
