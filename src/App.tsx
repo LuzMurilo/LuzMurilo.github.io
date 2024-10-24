@@ -52,12 +52,12 @@ function App() {
           <Routes>
             <Route index element={<Home language={language} />}  />
             <Route path="/projects" element={<Projects language={language}/>} />
-            <Route path="/experiences" element={<Experiences />} />
+            <Route path="/experiences" element={<Experiences language={language}/>} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <footer>
-          <Footer />
+          <Footer navData={navigationData} language={language}/>
         </footer>
       </div>
     </BrowserRouter>

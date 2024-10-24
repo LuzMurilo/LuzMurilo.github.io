@@ -41,5 +41,13 @@
             "link": "https://github.com/LuzMurilo",
             "icon": "github"
         }
-    ]
+    ],
+    "footerText": {
+        "en":"Website made by Murilo Luz Stucki",
+        "pt":"Site feito por Murilo Luz Stucki"
+    },
+    "footerImage": {
+        "path":"Murilo-minimal-pixel.png",
+        "alt":"Murilo Pixel Portrait"
+    }
 }
