@@ -7,6 +7,10 @@
     "en":"Freelances",
     "pt":"Freelances"
   },
+  "websiteButtonText":{
+    "en":"See Website",
+    "pt":"Visite o Site"
+  },
   "experiecesPageButton": {
       "text": {
           "en":"+ Details",
@@ -104,26 +108,86 @@
   ],
   "freelances": [
     {
-      "role": "E-commerce Manager",
+      "role": {
+        "en":"E-commerce Manager",
+        "pt":"Gerente de Loja Virtual"
+      },
       "organisation": "SOS Patas",
-      "startDate": "Sep 2024",
-      "endDate": "Present",
-      "assignments": ["Created an e-commerce website using Loja Integrada platform", "Integrated the website with Facebook, Instagram, logistics provider and the ERP System", "Working part-time to manage the sales flow, create ads for the products and make changes when necessary."],
+      "startDate": {
+        "en":"Sep 2024",
+        "pt":"Set 2024"
+      },
+      "endDate": {
+        "en":"Present",
+        "pt":"Atual"
+      },
+      "assignments": {
+        "en": [
+          "Created an e-commerce website using Loja Integrada platform", 
+          "Integrated the website with Facebook, Instagram, logistics provider and the ERP System", 
+          "Working part-time to manage the sales flow, create ads for the products and make changes when necessary."
+        ],
+        "pt": [
+          "Criei uma loja virtual usando a plataforma Loja Integrada",
+          "Integrei a loja com o Facebook, o Instagram, o Serviço de Logística e o Sistema de ERP",
+          "Trabalho meio-período para gerenciar o fluxo de vendas, criar anúncios para os produtos e fazer alterações necessárias"
+        ]
+      },
       "website": "https://sos-patas.lojaintegrada.com.br/"
     },
     {
-      "role": "Tournament Website",
+      "role": {
+        "en":"Tournament Website",
+        "pt":"Site de Torneios"
+      },
       "organisation": "O GAMONISTA",
-      "startDate": "Jun 2023",
-      "endDate": "Present",
-      "assignments": ["Created a website to show the results of several backgammon tournaments", "Developed a solution with Google App Script to feed the information from Google Sheets directly to the website", "Still working with the owner to make adjustments for new tournaments and improvements to the website"],
+      "startDate": {
+        "en":"Jun 2023",
+        "pt":"Jun 2023"
+      },
+      "endDate": {
+        "en":"Present",
+        "pt":"Atual"
+      },
+      "assignments": {
+        "en": [
+          "Created a website to show the results of several backgammon tournaments", 
+          "Developed a solution with Google Apps Script to feed the information from Google Sheets directly to the website", 
+          "Still working with the owner to make adjustments for new tournaments and improvements to the website"
+        ],
+        "pt": [
+          "Criei um site para a visualização dos resultados de torneios de gamão",
+          "Desenvolvi uma solução com Google Apps Script para 'alimentar' o site diretamente com tabelas vindas do Google Sheets",
+          "Ainda trabalhando com o organizador para fazer ajustes necessários para novos torneios e melhoras no site"
+        ]
+      },
       "website": "https://williamwehby.com.br"
     },
     {
-      "role": "Artist and Animator",
-      "startDate": "Open to Work",
-      "endDate": "Comissions",
-      "assignments": ["I made digital illustrations and animations to be used in games and advertising", "Mostly pixel-art using Photoshop, but also used Illustrator and Krita", "You can see some not-comissions illustrations in the link below"],
+      "role": {
+        "en":"2D Illustrations and Animations",
+        "pt":"Ilustrações e Animações 2D"
+      },
+      "startDate": {
+        "en":"Open to Work",
+        "pt":"Disponível"
+      },
+      "endDate": {
+        "en":"Comissions",
+        "pt": "Comissões"
+      },
+      "assignments": {
+        "en":[
+          "I made digital illustrations and animations to be used in games and advertising", 
+          "Mostly pixel-art using Photoshop, but also used Illustrator and Krita", 
+          "You can see some personal art in the link below"
+        ],
+        "pt": [
+          "Eu fiz ilustrações e animações digitais para serem usadas em games e em anúncios",
+          "A maioria em Pixel-Art usando Photoshop, mas também já usei o Illustrator e o Krita",
+          "Você pode ver algumas artes pessoais no link abaixo"
+        ]
+      },
       "website": "https://www.instagram.com/luzmurilo.art/"
     }
   ]

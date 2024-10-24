@@ -5,6 +5,8 @@ import Freelances from "../components/Freelances/Freelances"
 
 //DATA
 import otherData from "../data/others.json";
+import experiencesData from "../data/experience.json";
+import skillsData from "../data/skills.json";
 
 interface ExperiencesProps {
   language: string;
@@ -13,9 +15,9 @@ interface ExperiencesProps {
 function Experiences({ language = "en" }: ExperiencesProps) {
   return (
     <div>
-      <ExperiencesFull />
-      <Freelances />
-      <AllSkills />
+      <ExperiencesFull experienceData={experiencesData} language={language}/>
+      <Freelances freelanceData={experiencesData} language={language}/>
+      <AllSkills skillsData={skillsData} language={language}/>
       <DownloadCV downloadCVData={otherData.downloadCV} language={language}/>
     </div>
   )

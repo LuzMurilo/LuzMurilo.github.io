@@ -1,4 +1,9 @@
-[
+{
+  "skillsSectionTitle": {
+    "en": "All Skills",
+    "pt": "Habilidades Técnicas"
+  },
+  "skills":[
     {
       "title": "Unity",
       "imageSrc": "skills/unity.png"
@@ -28,6 +33,10 @@
       "imageSrc": "skills/firebase.png"
     },
     {
+      "title": "Google Apps Script",
+      "imageSrc": "skills/apps-script.png"
+    },
+    {
       "title": "Figma",
       "imageSrc": "skills/figma.png"
     },
@@ -48,3 +57,4 @@
       "imageSrc": "skills/nginx.png"
     }
   ]
+}

@@ -36,7 +36,7 @@ function Footer({ language = "en", navData}: FooterProps) {
         <div className={styles.navigation}>
           {navData.pages.map((page) => {
             return (
-              <NavLink to={page.path}>{page.pageName[language]}</NavLink>
+              <NavLink to={page.path} key={page.pageName[language]}>{page.pageName[language]}</NavLink>
             );
           })}
         </div>

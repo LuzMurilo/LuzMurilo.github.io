@@ -1,0 +1,34 @@
+{
+    "contactPageTitle": {
+        "en": "Contact",
+        "pt": "Contato"
+    },
+    "contactSubtitle": {
+        "en": "Feel free to contact me anywhere!",
+        "pt": "Fique à vontade para me contatar!"
+    },
+    "contactText": {
+        "en": "I'd love to answer any questions, talk about new projects and collaborations, or hear your feedback about one of my projects.",
+        "pt": "Eu adoraria responder qualquer pergunta, conversar sobre novos projetos e colaborações, ou ouvir seu feedback sobre algum dos meus projetos."
+    },
+    "contactMethods": [
+        {
+            "methodName": "LinkedIn",
+            "link": "https://www.linkedin.com/in/luz-murilo/",
+            "text": "linkedin.com/in/luz-murilo/",
+            "icon": "linkedin"
+        },
+        {
+            "methodName": "GitHub",
+            "link": "https://github.com/LuzMurilo",
+            "text": "github.com/LuzMurilo",
+            "icon": "github"
+        },
+        {
+            "methodName": "Email",
+            "link": "mailto:murilo.stucki@gmail.com",
+            "text": "murilo.stucki@gmail.com",
+            "icon": "email"
+        }
+    ]
+}

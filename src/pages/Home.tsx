@@ -21,7 +21,7 @@ function Home({ language="en" }: HomeProps) {
         <Hero heroData={aboutData.hero} language={language}/>
         <About aboutData={aboutData} language={language}/>
         <ProjectsPreview projectsData={projectsData} language={language}/>
-        <Experience experienceData={experienceData} skillsData={skillsData} language={language}/>
+        <Experience experienceData={experienceData} skillsData={skillsData.skills} language={language}/>
         <DownloadCV downloadCVData={otherData.downloadCV} language={language}/>
     </>
   )

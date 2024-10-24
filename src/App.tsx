@@ -53,7 +53,7 @@ function App() {
             <Route index element={<Home language={language} />}  />
             <Route path="/projects" element={<Projects language={language}/>} />
             <Route path="/experiences" element={<Experiences language={language}/>} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact language={language}/>} />
           </Routes>
         </main>
         <footer>
