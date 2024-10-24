@@ -3,14 +3,20 @@ import DownloadCV from "../components/DownloadCV/DownloadCV"
 import ExperiencesFull from "../components/ExperiencesFull/ExperiencesFull"
 import Freelances from "../components/Freelances/Freelances"
 
+//DATA
+import otherData from "../data/others.json";
 
-function Experiences() {
+interface ExperiencesProps {
+  language: string;
+}
+
+function Experiences({ language = "en" }: ExperiencesProps) {
   return (
     <div>
       <ExperiencesFull />
       <Freelances />
       <AllSkills />
-      <DownloadCV />
+      <DownloadCV downloadCVData={otherData.downloadCV} language={language}/>
     </div>
   )
 }

@@ -1,32 +1,103 @@
 {
+  "expTitle":{
+    "en":"Professional Experience",
+    "pt":"Experiência Profissional"
+  },
+  "freelanceTitle":{
+    "en":"Freelances",
+    "pt":"Freelances"
+  },
+  "experiecesPageButton": {
+      "text": {
+          "en":"+ Details",
+          "pt":"+ Detalhes"
+      },
+      "path": "/experiences"
+  },
   "jobs": [
     {
-      "role": "Office Assistant",
+      "role": {
+        "en":"Office Assistant",
+        "pt":"Assistente de Escritório"
+      },
       "organisation": "Masters Pool Resurfacing",
-      "startDate": "Apr 2024",
-      "endDate": "Aug 2024",
-      "assignments": ["Used emails and phone calls to interact with clients in english", "Made quotes and invoices for projects", "Managed projects schedule and solved logistics problems"],
+      "startDate": {
+        "en":"Apr 2024",
+        "pt":"Abr 2024"
+      },
+      "endDate": {
+        "en":"Aug 2024",
+        "pt":"Ago 2024"
+      },
+      "assignments": {
+        "en":[
+          "Used emails and phone calls to interact with clients in english", 
+          "Made quotes and invoices for projects", 
+          "Managed projects schedule and solved logistics problems"
+        ],
+        "pt":[
+          "Interagia com clientes em inglês através de ligações e emails", 
+          "Fazia cotações e notas para os projetos", 
+          "Gerenciava a agenda de projetos e ajudava a resolver problemas logísticos"
+        ]
+      },
       "imageSrc": "history/masters.png",
       "website": "https://masterspoolresurfacing.com/"
     },
     {
-      "role": "Game Developer",
+      "role": {
+        "en":"Game Developer",
+        "pt":"Desenvolvedor de Jogos"
+      },
       "organisation": "O GAMONISTA",
-      "startDate": "Sep 2022",
-      "endDate": "Apr 2024",
-      "assignments": ["Used Unity to develop a multiplayer browser game", "Designed all systems and communications according to the expansive nature of the platform", "Used FireBase products for backend and data storage"],
+      "startDate": {
+        "en":"Sep 2022",
+        "pt":"Set 2022"
+      },
+      "endDate": {
+        "en":"Apr 2024",
+        "pt":"Abr 2024"
+      },
+      "assignments": {
+        "en":[
+          "Used Unity to develop a multiplayer browser game", 
+          "Designed all systems and communications according to the expansive nature of the platform", 
+          "Used FireBase products for backend and data storage"
+        ],
+        "pt":[
+          "Desenvolvi um jogo multiplayer para navegadores usando a Unity", 
+          "Planejei todos os sistemas e comunicações de acordo com a natureza expansiva da plataforma", 
+          "Usei produtos da FireBase para o backend e banco de dados"
+        ]
+      },
       "imageSrc": "history/ogamonista.png"
     },
     {
-      "role": "Web Development Intern",
+      "role": {
+        "en":"Web Development Intern",
+        "pt":"Estágio em Desenvolvimento Web"
+      },
       "organisation": "SFLabs",
-      "startDate": "Oct 2020",
-      "endDate": "Apr 2021",
-      "assignments": [
+      "startDate": {
+        "en":"Oct 2020",
+        "pt":"Out 2020"
+      },
+      "endDate": {
+        "en":"Apr 2021",
+        "pt":"Abr 2021"
+      },
+      "assignments": {
+        "en":[
         "Developed 10+ static websites using React.js and Gatsby.js.",
         "Heavy focus on SEO and conversion rate",
         "Helped with the automation of the build and deploy pipeline."
-      ],
+        ],
+        "pt":[
+          "Desenvolvi mais de 10 sites estáticos usando React.js e Gatsby.js",
+          "Grande foco em SEO e taxa de conversões",
+          "Ajudei com a automatização das pipelines de build e deploy dos sites"
+        ]
+      },
       "imageSrc": "history/logoSFLabs.png",
       "website": "https://sflabs.com.br/"
     }
