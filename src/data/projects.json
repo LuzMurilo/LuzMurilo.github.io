@@ -41,7 +41,7 @@
                 "pt":"<p>Eu fiz este site com o intuito de ser um portfólio customizável, um lugar onde eu possa mostrar meus projetos e experiências em mais detalhe do que em um currículo, além de ter meu próprio estilo.</p><p>Eu usei React.js com TypeScript e CSS puro.</p>"
             },
             "imageSrc": "projects/portfolio.png",
-            "repository": "https://github.com/LuzMurilo/portfolio-react"
+            "repository": "https://github.com/LuzMurilo/LuzMurilo.github.io"
         },
         {
             "title": "Constellation",
