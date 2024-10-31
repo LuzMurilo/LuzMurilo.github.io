@@ -33,7 +33,7 @@ function ContactFull({ language = "en", contactData }: ContactFullProps) {
                             return (
                                 <li className={styles.linkItem} key={method.methodName}>
                                     <a href={method.link} target="_blank" className={styles.socialLink}>
-                                        <SvgIcon icon={method.icon} height="32px" width="32px"/>
+                                        <SvgIcon icon={method.icon} height="32px" width="32px" className={styles.icon}/>
                                         <p>{method.text}</p>
                                     </a>
                                 </li>

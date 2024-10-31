@@ -50,6 +50,11 @@
     padding: 16px;
 }
 
+.icon {
+    min-width: 32px;
+    height: 32px;
+}
+
 @media screen and (max-width: 900px) {
     .box {
         flex-direction: column;
@@ -61,5 +66,21 @@
 
     .linksContent {
         width: 100%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .socialLink {
+        color: var(--color-primary);
+    }
+
+    .box {
+        padding: 0;
+    }
+
+    .title {
+        padding-left: 16px;
     }
 }
