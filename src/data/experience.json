@@ -21,6 +21,35 @@
   "jobs": [
     {
       "role": {
+        "en":"Web Developer",
+        "pt":"Desenvolvedor Web"
+      },
+      "organisation": "SOS Patas",
+      "startDate": {
+        "en":"Sep 2024",
+        "pt":"Set 2024"
+      },
+      "endDate": {
+        "en":"Present",
+        "pt":"Atual"
+      },
+      "assignments": {
+        "en": [
+          "Created an e-commerce website using Loja Integrada platform", 
+          "Integrated the website with Facebook, Instagram, logistics provider and the ERP System", 
+          "Working part-time to manage the sales flow, create ads for the products and make changes when necessary."
+        ],
+        "pt": [
+          "Criei uma loja virtual usando a plataforma Loja Integrada",
+          "Integrei a loja com o Facebook, o Instagram, o Serviço de Logística e o Sistema de ERP",
+          "Trabalho meio-período para gerenciar o fluxo de vendas, criar anúncios para os produtos e fazer alterações necessárias"
+        ]
+      },
+      "imageSrc": "history/sospatas.png",
+      "website": "https://sospatas.com.br/"
+    },
+    {
+      "role": {
         "en":"Office Assistant",
         "pt":"Assistente de Escritório"
       },
@@ -107,34 +136,6 @@
     }
   ],
   "freelances": [
-    {
-      "role": {
-        "en":"E-commerce Manager",
-        "pt":"Gerente de Loja Virtual"
-      },
-      "organisation": "SOS Patas",
-      "startDate": {
-        "en":"Sep 2024",
-        "pt":"Set 2024"
-      },
-      "endDate": {
-        "en":"Present",
-        "pt":"Atual"
-      },
-      "assignments": {
-        "en": [
-          "Created an e-commerce website using Loja Integrada platform", 
-          "Integrated the website with Facebook, Instagram, logistics provider and the ERP System", 
-          "Working part-time to manage the sales flow, create ads for the products and make changes when necessary."
-        ],
-        "pt": [
-          "Criei uma loja virtual usando a plataforma Loja Integrada",
-          "Integrei a loja com o Facebook, o Instagram, o Serviço de Logística e o Sistema de ERP",
-          "Trabalho meio-período para gerenciar o fluxo de vendas, criar anúncios para os produtos e fazer alterações necessárias"
-        ]
-      },
-      "website": "https://sos-patas.lojaintegrada.com.br/"
-    },
     {
       "role": {
         "en":"Tournament Website",
