@@ -5,12 +5,16 @@
   },
   "skills":[
     {
-      "title": "Unity",
-      "imageSrc": "skills/unity.png"
+      "title": "React.js",
+      "imageSrc": "skills/react.png"
     },
     {
-      "title": "React",
-      "imageSrc": "skills/react.png"
+      "title": "Next.js",
+      "imageSrc": "skills/nextjs.svg"
+    },
+    {
+      "title": "Unity",
+      "imageSrc": "skills/unity.png"
     },
     {
       "title": "HTML",
@@ -25,20 +29,24 @@
       "imageSrc": "skills/typescript.png"
     },
     {
-      "title": "Node",
+      "title": "Node.js",
       "imageSrc": "skills/node.png"
+    },
+    {
+      "title": "Git",
+      "imageSrc": "skills/git.png"
     },
     {
       "title": "FireBase",
       "imageSrc": "skills/firebase.png"
     },
     {
-      "title": "Google Apps Script",
-      "imageSrc": "skills/apps-script.png"
-    },
-    {
       "title": "Figma",
       "imageSrc": "skills/figma.png"
+    },
+    {
+      "title": "Google Apps Script",
+      "imageSrc": "skills/apps-script.png"
     },
     {
       "title": "Photoshop",

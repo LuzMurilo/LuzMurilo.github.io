@@ -30,7 +30,7 @@ interface ExperienceProps {
 function Experience({ language = "en", experienceData, skillsData }: ExperienceProps) {
 
     if (!experienceData || !skillsData) return <h1>Experience data missing!</h1>
-    const maxSkills = 8;
+    const maxSkills = 10;
 
     return (
         <section className={styles.experience} id="experience">
