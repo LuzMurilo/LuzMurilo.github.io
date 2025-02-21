@@ -9,6 +9,7 @@ type ProjectData = {
     repository? : string;
     videoSrc? : string;
     demo? : string;
+    website? : string;
 }
 
 interface ProjectsFullProps {
@@ -21,6 +22,7 @@ interface ProjectsFullProps {
             repository: { [key:string]:string };
             demo: { [key:string]:string };
             video: { [key:string]:string };
+            website: { [key:string]:string };
         }
     };
 
@@ -49,7 +51,8 @@ function ProjectsFull({ language = "en", projectsData}: ProjectsFullProps) {
                 <div className={styles.cardButtons}>
                     {project.repository && <Button className={styles.codeBtn} external to={project.repository}>{projectsData.buttonTexts.repository[language]}</Button>}
                     {project.demo && <Button external className={styles.demoBtn} to={project.demo}>{projectsData.buttonTexts.demo[language]}</Button>}
-                    {project.videoSrc && <Button external className={styles.demoBtn} to={project.videoSrc}>{projectsData.buttonTexts.video[language]}</Button>}
+                    {project.videoSrc && <Button external className={styles.demoBtn} to={project.videoSrc}>{projectsData.buttonTexts.video[language]}</Button>}              
+                    {project.website && <Button external className={styles.demoBtn} to={project.website}>{projectsData.buttonTexts.website[language]}</Button>}
                 </div>
             </div>
         )

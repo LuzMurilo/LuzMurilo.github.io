@@ -16,6 +16,15 @@
     },
     "projects": [
         {
+            "title": "E-commerce SOS Patas",
+            "description": {
+                "en":"<p>I made a website for a nonprofit that focused on raising donations to help abandoned animals.</p><p>The project consists in an online store where every purchase becomes a donation to the partner organizations.</p><p>The website was made using a basic template and customized by inserting JavaScript, HTML and CSS code, following the requirements of the owners.</p>",
+                "pt":"<p>Eu fiz um site para uma ONG focada em arrecadar recursos para animais carentes.</p><p>O projeto consiste em uma loja solidária onde cada compra se transforma em uma doação para as entidades parceiras.</p><p>O site foi feito usando um template básico da plataforma Loja Integrada, e customizado utilizando JavaScript, HTML e CSS, de acordo com os requisitos dos sócios.</p>"
+            },
+            "imageSrc": "projects/sospatas.png",
+            "website": "https://www.loja.sospatas.com.br/"
+        },
+        {
             "title": "Infinity Run",
             "description": {
                 "en":"<p>A prototype of an endless runner game made in Unity for Android devices, inspired by Temple Run and Subway Surfers.</p><p>It's still in development, but I plan to upload it to the Play Store once it gets in a playable state.</p><p>It currently has randomized obstacles, coins and ground slope implemented. And I plan to add more obstacles, enemies and power-ups.</p>",
@@ -70,6 +79,10 @@
         "video": {
             "en":"Watch the Video",
             "pt":"Assista ao Vídeo"
+        },
+        "website": {
+            "en":"Visit Website",
+            "pt":"Visite o Site"
         }
     }
 }
