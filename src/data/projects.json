@@ -25,6 +25,15 @@
             "website": "https://www.loja.sospatas.com.br/"
         },
         {
+            "title": "Blog SOS Patas",
+            "description": {
+                "en":"<p>I built a blog website to publish news and informative posts about the nonprofit operations. The goal was to attract more organic visits and raise awareness to the cause.</p><p>For this project I used Wordpress and plugins that help us manage our SEO goals.</p>",
+                "pt":"<p>Construí um site de blog para publicar novidades e posts informativos sobre as operações da ONG. O objetivo era de atrair mais tráfico orgânico e aumentar a concientização sobre a causa.</p><p>Para este projeto eu utilizei o Wordpress e plugins que nos ajudam a gerenciar nossas metas de SEO.</p>"
+            },
+            "imageSrc": "projects/sospatas-blog.png",
+            "website": "https://sospatas.com.br/"
+        },
+        {
             "title": "Infinity Run",
             "description": {
                 "en":"<p>A prototype of an endless runner game made in Unity for Android devices, inspired by Temple Run and Subway Surfers.</p><p>It's still in development, but I plan to upload it to the Play Store once it gets in a playable state.</p><p>It currently has randomized obstacles, coins and ground slope implemented. And I plan to add more obstacles, enemies and power-ups.</p>",
